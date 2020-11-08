@@ -46,17 +46,25 @@ Inclusão dos Modelos OLTP
 <br>
 Inclusão dos Modelos OLAP
 TABELAS DIMENSÃO, FATO, MEDIDAS E MÉTRICAS
+Implementação de no mínimo 3 dimensões e 1 fato presentes no Mapa de ETL
 <br>
 <br>
  
-### 9 ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO
-#### 9.1	,ESTATISTICAS, SIZING<br>
+### 9 CARGA DE DADOS,ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO
+#### 9.1	CARGA DE DADOS A ANÁLISE DOS RESULTADOS OBTIDOS
+<br>
+Realização de todo processo de ETL (Siga os passos solicitados, preferencialente nas ferramentas recomendadas)
+OBS:Lembre que este processo é comumente custoso e complexo, não substime as dificuldades implícitas. 
+<br>
+<br>
+
+#### 9.2	,ESTATISTICAS, SIZING<br>
 <br>
 Inclusão de análise das estatísticas e Sizing
 <br>
 <br>
 
-#### 9.2	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
+#### 9.3	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
     a) Lista de índices, tipos de índices com explicação de porque foram implementados nas consultas 
     b) Performance esperada VS Resultados obtidos
     c) Tabela de resultados comparando velocidades antes e depois da aplicação dos índices (constando velocidade esperada com planejamento, sem indice e com índice Vs velocidade de execucao real com índice e sem índice).
