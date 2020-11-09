@@ -58,6 +58,10 @@ OBS:Lembre que este processo é comumente custoso e complexo, não substime as d
 <br>
 <br>
 
+
+##   MARCO DE ENTREGA PARTE 01 (Até item 9.1)
+
+
 #### 9.2	,ESTATISTICAS, SIZING<br>
 <br>
 Inclusão de análise das estatísticas e Sizing
@@ -100,6 +104,10 @@ Scikit learning Map : http://scikit-learn.org/stable/tutorial/machine_learning_m
 Machine learning in Python with scikit-learn: https://www.youtube.com/playlist?list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A
 
 
+##   MARCO DE ENTREGA PARTE 02 (Até item 11)
+
+
+
 ### 12 CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) análises/dashboards e resultados provenientes do banco de dados OLAP desenvolvido (CANVAS + NOTEBOOKS E CONCLUSÕES0
@@ -107,6 +115,8 @@ Machine learning in Python with scikit-learn: https://www.youtube.com/playlist?l
 #### b) Tempo de apresentação 6:40 
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos principais resultados.
 
+
+##   MARCO DE ENTREGA PARTE 03 (Até item 12)
 
 ### 13  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 <comentario no git>
