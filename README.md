@@ -23,9 +23,9 @@ Inclusão do Fast Modelling Canvas
 <br>
 <br>
 
-### 5 Fast EDA Canvas
+### 5 Fast EDA e PPD Canvas
 <br>
-Inclusão do Fast EDA Canvas + Inclusão de Análise exploratoria de dados (Jupyter notebook/Colab)
+Inclusão do Fast EDA Canvas, Fast PPD Canvas + Inclusão de Pré processamentoe e Análise exploratoria de dados (Jupyter notebook/Colab)
 <br>
 <br>
 
