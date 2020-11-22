@@ -91,11 +91,15 @@ Inclusão de análise das estatísticas e Sizing
 
 ### 11 MINERAÇÃO DE DADOS
 
+a) Tópicos introdutórios
 * Explicação/Fundamentação teórica sobre o método, objetivos e restrições! (formato doc/odt ou PDF)
 * Onde/quando aplicar 
 > ##### Estudar e explicar artigo que aplique o método de mineração de dados/machine learning escolhido
 * exemplo de uso/aplicação 
-> ##### a) Implementar algoritmo de básico de exemplo obtido na literatura (enviar código executável junto do trabalho com detalhamento de explicação para uso passo a passo)
+> ##### Implementar algoritmo básico de exemplo obtido na literatura (enviar código executável junto do trabalho com detalhamento de explicação para uso passo a passo)
+b) Aplicação de data mining/machine learning nos dados do trabalho 
+* definir conjunto de dados relevante para o processo
+* proposta deve ser aprovada pelo professor (deve ser enviada para avaliação até 72 hora antes da entrega da atividade)
 
 Referência: http://scikit-learn.org/stable/index.html
 <br>
@@ -110,9 +114,9 @@ Machine learning in Python with scikit-learn: https://www.youtube.com/playlist?l
 
 ### 12 CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
-#### a) análises/dashboards e resultados provenientes do banco de dados OLAP desenvolvido (CANVAS + NOTEBOOKS E CONCLUSÕES0
-#### a) Modelo (pecha kucha)<br>
-#### b) Tempo de apresentação 6:40 
+#### a) Conclusão análises de data mining/dashboards e ajustes no trabalho (conforme ajustes solicitados pelo professor)
+#### b) Criação de Slides para apresentação dos resultados provenientes do banco de dados OLAP desenvolvido (CANVAS + NOTEBOOKS E CONCLUSÕES)
+#### c) Modelo Pecha Kucha(Apresentação com tempo de  6m40s) 
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos principais resultados.
 
 
