@@ -1,7 +1,7 @@
 # TrabalhoBD2_2020
 
 
-# TRABALHO 01 : Título do trabalho
+# TRABALHO 01 : Ocorrências Policiais Da Grande Vitória
 <br>
 Trabalho desenvolvido durante a disciplina de BD2
  
@@ -20,14 +20,16 @@ Fonte: SESP - Secretaria de Estado da Segurança Pública e Defesa Social
 
 ### 3 Fast Imersion Canvas
 <br>
-![Fast Imersion Canvas](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/Fast%20Immersion%20Canvas.jpg)
-[Link do DOCS](https://docs.google.com/presentation/d/14wGFh0xtsRG9IIhV1w6O_9XpKqbQICGXFUXmwtUdzOk/edit?usp=sharing)
+
+![Fast Imersion Canvas](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/modelos/Fast%20Immersion%20Canvas.png)<br>
+Link do DOCS: https://docs.google.com/presentation/d/14wGFh0xtsRG9IIhV1w6O_9XpKqbQICGXFUXmwtUdzOk/edit?usp=sharing<br>
 <br>
 
 ### 4 Fast Modelling Canvas
 <br>
-![Fast Modelling Canvas](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/Fast%20Modelling%20Canvas.jpg)
-[Link do DOCS](https://docs.google.com/presentation/d/1IRQFbgwR4U8392uU6h7c7p4xZBYW11HkGwRWeOXxwJ8/edit?usp=sharing)
+
+![Fast Modelling Canvas](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/modelos/Fast%20Modelling%20Canvas.png)<br>
+Link do DOCS: https://docs.google.com/presentation/d/1IRQFbgwR4U8392uU6h7c7p4xZBYW11HkGwRWeOXxwJ8/edit?usp=sharing<br>
 <br>
 
 ### 5 Fast EDA e PPD Canvas
@@ -44,14 +46,16 @@ Inclusão do Mapa de ETL
      
 ### 7	MODELO CONCEITUAL, LOGICO E FISICO - OLTP
 <br>
-![Modelo OLTP](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/modelo-oltp.jpg)
-[SQL de Criação](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/create-oltp.sql)
+
+![Modelo OLTP](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/modelos/modelo-oltp.png)<br>
+SQL de Criação: https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/sql/create-oltp.sql<br>
 <br>
 
 ### 8	MODELO CONCEITUAL, LOGICO E FISICO - OLAP
 <br>
-![Modelo OLAP](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/modelo-olap.jpg)
-[SQL de Criação](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/create-olap.sql)
+
+![Modelo OLAP](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/modelos/modelo-olap.png)<br>
+SQL de Criação: https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/sql/create-olap.sql<br>
 <br>
  
 ### 9 CARGA DE DADOS,ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO
