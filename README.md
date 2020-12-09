@@ -69,11 +69,24 @@ OBS:Lembre que este processo é comumente custoso e complexo, não substime as d
 
 ##   MARCO DE ENTREGA PARTE 01 (Até item 9.1)
 
+#### 9.2 ESTATISTICAS, SIZING<br>
+##### Estatísticas<br>
 
-#### 9.2	,ESTATISTICAS, SIZING<br>
+```sql
+analyse local;
+analyse tipo;
+analyse tempo;
+analyse responsavel;
+analyse ocorrencia;
+
+select schemaname, tablename, attname, null_frac, avg_width, n_distinct, most_common_vals, correlation
+from pg_stats
+where schemaname = 'public';
+```
+
 <br>
-Inclusão de análise das estatísticas e Sizing
-<br>
+
+![Estatísticas](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/estatisticas.png)<br>
 <br>
 
 #### 9.3	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
