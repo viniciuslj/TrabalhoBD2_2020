@@ -70,7 +70,7 @@ OBS:Lembre que este processo é comumente custoso e complexo, não substime as d
 ##   MARCO DE ENTREGA PARTE 01 (Até item 9.1)
 
 #### 9.2 ESTATISTICAS, SIZING<br>
-##### Estatísticas<br>
+##### Estatísticas do banco de dados OLAP<br>
 
 ```sql
 analyse local;
@@ -87,6 +87,28 @@ where schemaname = 'public';
 <br>
 
 ![Estatísticas](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/estatisticas.png)<br>
+<br>
+
+##### Sizing do banco de dados OLAP<br>
+
+```sql
+select 
+	c.relname as "relation", 
+	relkind as "tipo_estrutura",
+	pg_size_pretty(pg_relation_size(c.oid)) as "size object",
+	pg_size_pretty(pg_total_relation_size(c.oid)) as "total size",
+	n_live_tup as "registros"
+from pg_class c
+	left join pg_namespace n on (n.oid = c.relnamespace)
+	left join pg_stat_user_tables t on (t.relid = c.oid)
+where nspname not in ('pg_catalog', 'information_schema')
+  and nspname !~'^pg_toast'
+order by pg_total_relation_size(c.oid) desc;
+```
+
+<br>
+
+![Sizing](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/sizing.png)<br>
 <br>
 
 #### 9.3	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
