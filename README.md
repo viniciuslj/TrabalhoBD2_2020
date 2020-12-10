@@ -122,15 +122,46 @@ order by pg_total_relation_size(c.oid) desc;
 <br>
 
 #### 10 Backup do Banco de Dados<br>
-        Detalhamento do backup.
-        a) Tempo
-        b) Tamanho
-        c) Teste de restauração (backup)
-        d) Tempo para restauração
-        e) Teste de restauração (script sql)
-        f) Tempo para restauração (script sql)
+
+##### PG_DUMP <br>
+
+Foi executado em 1.367 segundo. Gerando um arquivo de 2.17 MB.<br>
+
+```python
+import os, time
+
+t_inicio = time.time()
+os.system('pg_dump --verbose -Fc --file=ocorrencias_db.dump postgres://postgres:123456@localhost:5432/ocorrencias_db')
+t_fim = time.time()
+
+print("---")
+print("pg_dump em %s segundos" % (t_fim - t_inicio))
+```
+
 <br>
 
+![PG_DUMP](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/pgdump.png)<br>
+
+##### PG_RESTORE
+
+Foi executado em 1.694 segundo.<br>
+
+```python
+import os, time
+
+t_inicio = time.time()
+os.system('pg_restore --verbose -d "postgres://postgres:123456@localhost:5432/ocorrencias_db" ocorrencias_db.dump')
+t_fim = time.time()
+
+print("---")
+print("pg_restore em %s segundos" % (t_fim - t_inicio))
+```
+
+<br>
+
+![PG_RESTORE](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/pgrestore.png)<br>
+
+![Testes](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/teste-restore.png)<br>
 
 ### 11 MINERAÇÃO DE DADOS
 
