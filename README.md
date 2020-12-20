@@ -112,14 +112,60 @@ order by pg_total_relation_size(c.oid) desc;
 <br>
 
 #### 9.3	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
-    a) Lista de índices, tipos de índices com explicação de porque foram implementados nas consultas 
-    b) Performance esperada VS Resultados obtidos
-    c) Tabela de resultados comparando velocidades antes e depois da aplicação dos índices (constando velocidade esperada com planejamento, sem indice e com índice Vs velocidade de execucao real com índice e sem índice).
-    d) Escolher as consultas mais complexas para serem analisadas (consultas com menos de 2 joins não serão aceitas)
-    e) As imagens do Explain devem ser inclusas no trabalho, bem como explicações sobre os resultados obtidos.
-    f) Inclusão de tabela mostrando as 10 execuções, excluindo-se o maior e menor tempos para cada consulta e 
-    obtendo-se a media dos outros valores como resultado médio final.
+
+Foram criados índices BTREE nos campos da tabela de ocorrências. Foi necessário aumentar a quantidade de ocorrências de 379143 para 1.084.732, incluíndo os anos de 2015 e 2016. Duas consultas foram executadas para análise, porém não foram alcançadas grandes diferenças para a quantidade de registros.
 <br>
+
+##### Grão <br>
+
+```sql
+select 
+	oc.id, 
+	tp.codigo, tp.descricao, 
+	re.subunidade, re.unidade,
+	lo.bairro, lo.cidade, 
+	te.hora, te.dia, te.mes, te.ano, te.dia_semana
+from ocorrencia oc
+inner join tipo tp on tp.id = tipo_id
+inner join responsavel re on re.id = responsavel_id
+inner join local lo on lo.id = local_id
+inner join tempo te on te.id = tempo_id
+order by oc.id;
+```
+
+<br> 
+
+##### Crimes contra Patrimônio ou Pessoa	
+
+<br>
+
+```sql
+select 
+	oc.id, 
+	tp.codigo, tp.descricao, 
+	re.subunidade, re.unidade,
+	lo.bairro, lo.cidade, 
+	te.hora, te.dia, te.mes, te.ano, te.dia_semana
+from ocorrencia oc
+inner join tipo tp on tp.id = tipo_id
+inner join responsavel re on re.id = responsavel_id
+inner join local lo on lo.id = local_id
+inner join tempo te on te.id = tempo_id
+where tp.codigo like 'B%' or tp.codigo like 'A%'
+order by oc.id;
+```
+
+<br>
+
+##### Resultados <br>
+
+<br>
+
+![Sizing](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/resultados-idx.png)<br>
+
+<br>
+
+##### 
 
 #### 10 Backup do Banco de Dados<br>
 
