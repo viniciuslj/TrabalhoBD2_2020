@@ -59,13 +59,60 @@ SQL de Criação: https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/sql/c
 <br>
  
 ### 9 CARGA DE DADOS,ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO
-#### 9.1	CARGA DE DADOS A ANÁLISE DOS RESULTADOS OBTIDOS
+#### 9.1	CARGA DE DADOS A ANÁLISE DOS RESULTADOS OBTIDOS 
 <br>
-Realização de todo processo de ETL (Siga os passos solicitados, preferencialente nas ferramentas recomendadas)
-OBS:Lembre que este processo é comumente custoso e complexo, não substime as dificuldades implícitas. 
-<br>
+O processo de carga foi realizado por meio de script Python. O script gera arquivos CSV das
+dimensões tendo como base os dados de entrada. Os arquivos CSV são carregados para a base OLAP
+utilizando a instrunção SQL COPY.
+
 <br>
 
+##### Script Python 
+<br>
+
+<b>Execução:</b>
+<br>
+
+```shell
+py split.py arquivo-entrada.cvs <diretório-saida>
+```
+
+Script Python: https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/python/split.py<br>
+
+<br>
+
+##### SQL
+<br>
+
+```sql
+-- Local
+COPY local(id, bairro, cidade)
+FROM 'C:\ocorrencias\dados\local.csv'
+DELIMITER ';' CSV;
+
+-- Responsável
+COPY responsavel(id, subunidade, unidade)
+FROM 'C:\ocorrencias\dados\responsavel.csv'
+DELIMITER ';' CSV;
+
+-- Tipo
+COPY tipo(id, codigo, descricao)
+FROM 'C:\ocorrencias\dados\tipo.csv'
+DELIMITER ';' CSV;
+
+-- Tempo
+COPY tempo(id, dia, dia_semana, mes, ano, hora)
+FROM 'C:\ocorrencias\dados\tempo.csv'
+DELIMITER ';' CSV;
+
+-- Ocorrência
+COPY ocorrencia(id,tipo_id,local_id,responsavel_id,tempo_id,quantidade)
+FROM 'C:\ocorrencias\dados\ocorrencia.csv'
+DELIMITER ';' CSV;
+
+```
+
+<br>
 
 ##   MARCO DE ENTREGA PARTE 01 (Até item 9.1)
 
