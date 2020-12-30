@@ -40,7 +40,9 @@ Inclusão do Fast EDA Canvas, Fast PPD Canvas + Inclusão de Pré processamentoe
 
 ### 6 Mapa de ETL
 <br>
-Inclusão do Mapa de ETL
+
+![Mapa de ETL](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/mapa-etl.png)<br>
+
 <br>
 <br>
      
