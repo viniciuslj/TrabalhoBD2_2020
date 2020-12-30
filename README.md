@@ -212,7 +212,22 @@ order by oc.id;
 
 <br>
 
-##### 
+##### EXPLAIN <br>
+
+Para ambas as consultas, foi obtido o seguinte EXPLAIN:
+
+<br>
+
+![EXPLAIN](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/grao-explain-1.png)<br>
+
+<br>
+
+![EXPLAIN](https://github.com/viniciuslj/TrabalhoBD2_2020/blob/main/img/grao-explain-2.png)<br>
+
+<br>
+<br>
+
+São executados SEQ SCAN nas tabelas, os Join's são realizados por meio de Hash; os dados são ordenados e retornados.
 
 #### 10 Backup do Banco de Dados<br>
 
